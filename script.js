@@ -9,7 +9,7 @@ function calculateLove() {
     const hash = (name1 + name2).toLowerCase().split('').reduce((acc, char)=> acc + char.charCodeAt(0), 0);
     const lovePorcentage = hash % 101; 
     
-    document.getElementById("result").innerHTML = `Su compatibilidad es de un ${lovePorcentage}`;
+    document.getElementById("result").innerHTML = `Su compatibilidad es de un ${lovePorcentage}%`;
 
     if (lovePorcentage >= 50) {
         
